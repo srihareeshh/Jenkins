@@ -12,7 +12,7 @@ pipeline{
                     using (echo num1 && num2) sends '5' as the first input
                     and '10' as the second input into the python script.
                 */
-                sh 'python3 sum.py'
+                bat '(echo 5 && echo 10) | python sum.py'
             }
         }
     }
